@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pi Day Advent Calendar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4572f88387.js" crossorigin="anonymous"></script>
+</head>
+<body class="night__toggle">
+    <!-- navbar ----------------------------------------------------------------------------------- -->
+    <div class="navbar__wrapper">
+        <div class="navbar">
+            <!-- left side of navbar -->
+            <a href="/" class="navbar__logo">
+                <span class="pi__wrapper">
+                    <img src="images/pi_logo.png" alt="pi symbol" class="pi">
+                </span> 
+                Pi Day Advent Calendar
+            </a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!-- right side of navbar -->
+            <div class="navbar__links__wrapper">
+                <div class="navbar__links">
+                    <a href="index.html" class="nav__link" id="home__link">Home</a>
+                    <a href="fun-integrals.html" class="nav__link" id="bn__link">Fun Integrals</a>
+                    <a href="authors-note.html" class="nav__link" id="an__link">Author's Note</a>
+                    <div class="theme__toggle">
+                        <div class="circle" id="v1"></div>
+                        <div class="circle" id="v2"></div>
+                        <div class="circle" id="v3"></div>
+                    </div>
+                    <div class="theme__wrapper">
+                        <div class="theme__title">Theme</div>
+                        <div class="theme__content">
+                            <div class="theme__circle night__toggle" id="light__circle">
+                                <i class="fa-solid fa-check check night__toggle" id="c1"></i>
+                                <div class="theme__half" id="white__half"></div>
+                                <div class="theme__half" id="orange__half"></div>
+                            </div>
+                            <div class="theme__circle night__toggle" id="dark__circle">
+                                <i class="fa-solid fa-check check night__toggle" id="c2"></i>
+                                <div class="theme__half" id="black__half"></div>
+                                <div class="theme__half" id="purple__half"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- below navbar ------------------------------------------------------------------------- -->
+            <div class="yellow__lights__wrapper frame1">
+                <img src="images/pixil-frame-0.png" alt="string lights">
+                <img src="images/pixil-frame-2.png" alt="string lights">
+                <img src="images/pixil-frame-4.png" alt="string lights">
+                <img src="images/pixil-frame-6.png" alt="string lights">
+                <img src="images/pixil-frame-8.png" alt="string lights">
+                <img src="images/pixil-frame-10.png" alt="string lights">
+                <img src="images/pixil-frame-12.png" alt="string lights">
+                <img src="images/pixil-frame-14.png" alt="string lights">
+                <img src="images/pixil-frame-16.png" alt="string lights">
+                <img src="images/pixil-frame-18.png" alt="string lights">
+                <img src="images/pixil-frame-20.png" alt="string lights">
+            </div>
+            <div class="yellow__lights__wrapper frame2">
+                <img src="images/pixil-frame-1.png" alt="string lights">
+                <img src="images/pixil-frame-3.png" alt="string lights">
+                <img src="images/pixil-frame-5.png" alt="string lights">
+                <img src="images/pixil-frame-7.png" alt="string lights">
+                <img src="images/pixil-frame-9.png" alt="string lights">
+                <img src="images/pixil-frame-11.png" alt="string lights">
+                <img src="images/pixil-frame-13.png" alt="string lights">
+                <img src="images/pixil-frame-15.png" alt="string lights">
+                <img src="images/pixil-frame-17.png" alt="string lights">
+                <img src="images/pixil-frame-19.png" alt="string lights">
+                <img src="images/pixil-frame-21.png" alt="string lights">
+            </div>
+    </div>
+
+    <div class="main__content">
+        <!-- countdown to pi day ------------------------------------------------------------------ -->
+        <div class="countdown__wrapper night__toggle">
+            <div class="countdown__title night__toggle">
+                <div class="countdown__title__content">Countdown to Pi Day</div>
+                <div class="countdown__subtitle__content">at 1:59:26pm</div>
+            </div>
+            <div class="countdown__content night__toggle">
+                <div class="count__digit">
+                    <div class="digit__number days">00</div>
+                    <div class="digit__label">days</div>
+                </div>
+                <div class="count__digit">
+                    <div class="digit__number hours">00</div>
+                    <div class="digit__label">hours</div>
+                </div>
+                <div class="count__digit">
+                    <div class="digit__number minutes">00</div>
+                    <div class="digit__label">minutes</div>
+                </div>
+                <div class="count__digit">
+                    <div class="digit__number seconds">00</div>
+                    <div class="digit__label">seconds</div>
+                </div>
+            </div>
+            <img src="images/pi_skyline.png" alt="pi skyline" class="pi__skyline">
+        </div>
+
+        <!-- advent calendar ---------------------------------------------------------------------- -->
+        <div class="advent__wrapper">
+            <div class="advent__title">
+                <div class="advent__title__content night__toggle">Pi Day Advent Calendar</div>
+            </div>
+            <div class="advent__instructions night__toggle">
+                <div class="advent__instructions__content">
+                    <span class="mobile__instructions">
+                        Tap on a door to see when you can open it.
+                        <br> Then, tap the "open" button to open it. </span>
+                    <span class="desktop__instructions">
+                        Click on a door to see when you can open it.  
+                        <br> Then, click the "open" button to open it.</span>  
+                </div>
+            </div>
+            <div class="SECOND__WRAPPER">
+                <div class="advent__content__wrapper night__toggle">
+                    <img src="images/advent-cal-background.png" alt="another pi symbol hehe" class="big__pi night__toggle">
+                    <img src="images/advent-cal-night-background.png" alt="another pi symbol hehe" class="big__night__pi night__toggle">
+                    <div class="advent__content">
+                        <div class="empty" id="e1"></div>
+                        <div class="door night__toggle" id="d1">
+                            <div class="door__content" id ="dc1">1</div>
+                        </div>
+                        <div class="door night__toggle" id="d2">
+                            <div class="door__content" id ="dc2">2</div>
+                        </div>
+                        <div class="door night__toggle" id="d3">
+                            <div class="door__content" id ="dc3">3</div>
+                        </div>
+                        <div class="door night__toggle" id="d4">
+                            <div class="door__content" id ="dc4">4</div>
+                        </div>
+                        <div class="door night__toggle" id="d5">
+                            <div class="door__content" id ="dc5">5</div>
+                        </div>
+                        <div class="door night__toggle" id="d6">
+                            <div class="door__content" id ="dc6">6</div>
+                        </div>
+                        <div class="door night__toggle" id="d7">
+                            <div class="door__content" id ="dc7">7</div>
+                        </div>
+                        <div class="door night__toggle" id="d8">
+                            <div class="door__content" id ="dc8">8</div>
+                        </div>
+                        <div class="door night__toggle" id="d9">
+                            <div class="door__content" id ="dc9">9</div>
+                        </div>
+                        <div class="door night__toggle" id="d10">
+                            <div class="door__content" id ="dc10">10</div>
+                        </div>
+                        <div class="door night__toggle" id="d11">
+                            <div class="door__content" id ="dc11">11</div>
+                        </div>
+                        <div class="door night__toggle" id="d12">
+                            <div class="door__content" id ="dc12">12</div>
+                        </div>
+                        <div class="door night__toggle" id="d13">
+                            <div class="door__content" id ="dc13">13</div>
+                        </div>
+                        <div class="door night__toggle" id="d14">
+                            <div class="door__content" id ="dc14">14</div>
+                        </div>
+                        <div class="empty" id="e2"></div>
+                        <div class="empty" id="e3"></div>
+                        <div class="empty" id="e4"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="advent__desc night__toggle">
+                <div class="door__number">
+                    No door info to display<br>
+                    Click on a door to see its info
+                </div>
+                <div class="lock__status">🔒LOCKED</div>
+                <div class="open__time"></div>
+                <div class="open__countdown__wrapper">
+                    <div class="open__countdown">
+                        This door will be unlocked in
+                        <div class="open__digit">
+                            <span class="open__number mini__days">00</span><span class="open__label"> days</span>
+                        </div>
+                        <div class="open__digit">
+                            <span class="open__number mini__hours">00</span><span class="open__label"> hours</span>
+                        </div>
+                        <div class="open__digit">
+                            <span class="open__number mini__minutes">00</span><span class="open__label"> minutes</span>
+                        </div>
+                        <div class="open__digit">
+                            <span class="open__number mini__seconds">00</span><span class="open__label"> seconds</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="open__button">OPEN DOOR</div>
+                <div class="error__msg">This door cannot be opened yet.  Please be patient.  </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer ----------------------------------------------------------------------------------- -->
+    <script src="app.js"></script>
+</body>
+</html>

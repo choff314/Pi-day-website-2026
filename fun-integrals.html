@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Integrals</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4572f88387.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.33/dist/katex.min.css" integrity="sha384-fgYS3VC1089n2J3rVcEbXDHlnDLQ9B2Y1hvpQ720q1NvxCduQqT4JoGc4u2QCnzE" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.33/dist/katex.min.js" integrity="sha384-YPHNAPyrxGS8BNnA7Q4ommqra8WQPEjooVSLzFgwgs8OXJBvadbyvx4QpfiFurGr" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.33/dist/contrib/auto-render.min.js" integrity="sha384-JKXHIJf8PKPyDFptuKZoUyMRQJAmQKj4B4xyOca62ebJhciMYGiDdq/9twUUWyZH" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+</head>
+<body class="night__toggle">
+    <!-- navbar ----------------------------------------------------------------------------------- -->
+    <div class="navbar__wrapper">
+        <div class="navbar">
+            <!-- left side of navbar -->
+            <a href="/" class="navbar__logo">
+                <span class="pi__wrapper">
+                    <img src="images/pi_logo.png" alt="pi symbol" class="pi">
+                </span> 
+                Pi Day Advent Calendar
+            </a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!-- right side of navbar -->
+            <div class="navbar__links__wrapper">
+                <div class="navbar__links">
+                    <a href="index.html" class="nav__link" id="home__link">Home</a>
+                    <a href="fun-integrals.html" class="nav__link" id="bn__link">Fun Integrals</a>
+                    <a href="authors-note.html" class="nav__link" id="an__link">Author's Note</a>
+                    <div class="theme__toggle">
+                        <div class="circle" id="v1"></div>
+                        <div class="circle" id="v2"></div>
+                        <div class="circle" id="v3"></div>
+                    </div>
+                    <div class="theme__wrapper">
+                        <div class="theme__title">Theme</div>
+                        <div class="theme__content">
+                            <div class="theme__circle night__toggle" id="light__circle">
+                                <i class="fa-solid fa-check check night__toggle" id="c1"></i>
+                                <div class="theme__half" id="white__half"></div>
+                                <div class="theme__half" id="orange__half"></div>
+                            </div>
+                            <div class="theme__circle night__toggle" id="dark__circle">
+                                <i class="fa-solid fa-check check night__toggle" id="c2"></i>
+                                <div class="theme__half" id="black__half"></div>
+                                <div class="theme__half" id="purple__half"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <!-- below navbar ------------------------------------------------------------------------- -->
+            <div class="yellow__lights__wrapper frame1">
+                <img src="images/pixil-frame-0.png" alt="string lights">
+                <img src="images/pixil-frame-2.png" alt="string lights">
+                <img src="images/pixil-frame-4.png" alt="string lights">
+                <img src="images/pixil-frame-6.png" alt="string lights">
+                <img src="images/pixil-frame-8.png" alt="string lights">
+                <img src="images/pixil-frame-10.png" alt="string lights">
+                <img src="images/pixil-frame-12.png" alt="string lights">
+                <img src="images/pixil-frame-14.png" alt="string lights">
+                <img src="images/pixil-frame-16.png" alt="string lights">
+                <img src="images/pixil-frame-18.png" alt="string lights">
+                <img src="images/pixil-frame-20.png" alt="string lights">
+            </div>
+            <div class="yellow__lights__wrapper frame2">
+                <img src="images/pixil-frame-1.png" alt="string lights">
+                <img src="images/pixil-frame-3.png" alt="string lights">
+                <img src="images/pixil-frame-5.png" alt="string lights">
+                <img src="images/pixil-frame-7.png" alt="string lights">
+                <img src="images/pixil-frame-9.png" alt="string lights">
+                <img src="images/pixil-frame-11.png" alt="string lights">
+                <img src="images/pixil-frame-13.png" alt="string lights">
+                <img src="images/pixil-frame-15.png" alt="string lights">
+                <img src="images/pixil-frame-17.png" alt="string lights">
+                <img src="images/pixil-frame-19.png" alt="string lights">
+                <img src="images/pixil-frame-21.png" alt="string lights">
+            </div>
+    </div>
+
+    <div class="main__content">
+        <div class="integrals__title night__toggle">
+            <h1 class="integrals__title_content">Some Fun Integrals!</h1>
+            <h2 class="integrals__subtitle__content">Credits go to my amazing dad ❤️</h2>
+        </div>
+        <div class="integrals night__toggle">
+            $$\int_0^\infty \frac{log(x)log(1-x^2)}{x^2} \, dx = \pi$$
+            <br>
+            $$4\int_0^\frac{\pi}{2} \frac{\log(\tan(x))}{1+\tan^2(x)} \, dx = \pi$$
+            <br>
+            $$\int_0^\frac{\pi}{2} \frac{\sin(x)+\cos(x)}{1-\sin(x)\cos(x)} \, dx = \pi$$
+        </div>
+    </div>
+    <!-- footer ----------------------------------------------------------------------------------- -->
+    <script src="app.js"></script>
+</body>
