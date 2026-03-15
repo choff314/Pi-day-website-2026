@@ -280,6 +280,14 @@ body{
     transition: all 1s ease;
 }
 
+.after__text{
+    color: white;
+    text-align: center;
+    display: none;
+    font-size: 1.2rem;
+    margin-bottom: -0.7rem;
+}
+
 .pi__skyline{
     position: absolute;
     left: 0;

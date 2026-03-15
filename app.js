@@ -73,6 +73,19 @@ function countdownClock(dayClass, hourClass, minClass, secClass, month, day, hou
     minutes.textContent = minutesUntil < 0? "" : minutesUntil;
     seconds.textContent = secondsUntil < 0? "" : secondsUntil;
 
+    if (secondsUntil < 0){
+        days.margin = '0';
+        hours.margin = '0';
+        minutes.margin = '0';
+        seconds.margin = '0';
+        const digitLabels = document.querySelectorAll('.digit__label');
+        digitLabels.forEach(digitLabel => {
+            digitLabel.style.display = 'none';
+        });
+        const afterText = document.querySelector('.after__text');
+        afterText.style.display = 'block';
+    }
+
 }
 
 function reset(dayClass, hourClass, minClass, secClass){
