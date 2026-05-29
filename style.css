@@ -2,21 +2,22 @@
 
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0; 
+    padding: 0; 
     font-family: 'Lexend Deca', sans-serif;
-    user-select: none;
+    user-select: none; /* You can't highlight anything on the page */
 }
 
 body{
     background-color: white;
-    transition: background-color 1s ease;
-    overflow-x: hidden;
+    transition: background-color 1s ease; /* transition is for dark theme toggle */
+    overflow-x: hidden;  /* i see no purpose for this - may have tried this at point and then found another fix*/
 }
 
 
 /* NAVBAR ------------------------------------------------- */
 
+/* wrapper contains both the navbar and lights underneath */
 .navbar__wrapper{
     background-color: rgb(99, 99, 99);
     height: 80px;
@@ -52,6 +53,7 @@ body{
     justify-content: flex-start;
     overflow: hidden;
     opacity: 1;
+    transition: all 0.4s ease;
 }
 
 .pi{
@@ -572,7 +574,7 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    transition: all 1s ease;
+    /* transition: all 1s ease; <- made it looks weird */ 
 }
 
 .door__content.open{
